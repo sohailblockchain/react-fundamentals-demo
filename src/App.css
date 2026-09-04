@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.secondary {
+  background: #475569;
+}
+
+.page {
+  width: min(100% - 32px, 920px);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  margin: 8px 0 12px;
+  font-size: clamp(34px, 6vw, 54px);
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.eyebrow {
+  font-weight: 700;
+  color: #2563eb !important;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 26px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card > p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.student-grid,
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.student-card {
+  background: #eff6ff;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.student-card h3 {
+  margin: 0 0 8px;
+}
+
+.student-card p {
+  margin: 0;
+  color: #475569;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.count {
+  min-width: 90px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.message {
+  font-weight: 700;
+  color: #1f2937 !important;
+}
+
+.concept-grid span {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 12px;
+}
+
+@media (max-width: 700px) {
+  .student-grid,
+  .concept-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
